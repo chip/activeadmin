@@ -167,6 +167,8 @@ module ActiveAdmin
     def register_default_assets
       stylesheets['active_admin.css'] = { media: 'screen' }
       stylesheets['active_admin/print.css'] = { media: 'print' }
+      stylesheets['application.css'] = { media: 'screen' }
+      javascripts.add 'application.js'
       javascripts.add 'active_admin.js'
     end
 
